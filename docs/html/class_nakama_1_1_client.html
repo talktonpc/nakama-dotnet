@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nakama .NET: Nakama.Client Class Reference</title>
+<title>Nakama .NET Client SDK for MetaTop: Nakama.Client Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="nakama_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Nakama .NET<span id="projectnumber">&#160;3.1.1</span>
+   <div id="projectname">Nakama .NET Client SDK for MetaTop<span id="projectnumber">&#160;3.1.1</span>
    </div>
-   <div id="projectbrief">.NET client for Nakama server written in C</div>
+   <div id="projectbrief">Nakama .NET Client SDK for MetaTop</div>
   </td>
  </tr>
  </tbody>
@@ -145,9 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a71580173da6e5314d6e8d060a9be404d"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a71580173da6e5314d6e8d060a9be404d">AuthenticateSteamAsync</a> (string token, string username=null, bool create=true, bool import=true, Dictionary&lt; string, string &gt; vars=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
 <tr class="memdesc:a71580173da6e5314d6e8d060a9be404d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a user with a Steam auth token.   <a href="class_nakama_1_1_client.html#a71580173da6e5314d6e8d060a9be404d">More...</a><br /></td></tr>
 <tr class="separator:a71580173da6e5314d6e8d060a9be404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143cf8eb589ce9116b3ba4953ec06633"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a143cf8eb589ce9116b3ba4953ec06633">BanGroupUsersAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string groupId, IEnumerable&lt; string &gt; usernames, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
-<tr class="memdesc:a143cf8eb589ce9116b3ba4953ec06633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ban a set of users from a group.   <a href="class_nakama_1_1_client.html#a143cf8eb589ce9116b3ba4953ec06633">More...</a><br /></td></tr>
-<tr class="separator:a143cf8eb589ce9116b3ba4953ec06633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fa73277247e7c0d29e50a8b33b9fd2"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a46fa73277247e7c0d29e50a8b33b9fd2">BanGroupUsersAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string groupId, IEnumerable&lt; string &gt; ids, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
+<tr class="memdesc:a46fa73277247e7c0d29e50a8b33b9fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ban a set of users from a group.   <a href="class_nakama_1_1_client.html#a46fa73277247e7c0d29e50a8b33b9fd2">More...</a><br /></td></tr>
+<tr class="separator:a46fa73277247e7c0d29e50a8b33b9fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294e742b48ec38fcb653b46d529586e2"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a294e742b48ec38fcb653b46d529586e2">BlockFriendsAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, IEnumerable&lt; string &gt; ids, IEnumerable&lt; string &gt; usernames=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
 <tr class="memdesc:a294e742b48ec38fcb653b46d529586e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block one or more friends by id or username.   <a href="class_nakama_1_1_client.html#a294e742b48ec38fcb653b46d529586e2">More...</a><br /></td></tr>
 <tr class="separator:a294e742b48ec38fcb653b46d529586e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,9 +244,9 @@ Members who are already at the lowest rank will be skipped.  <a href="class_naka
 <tr class="memitem:ad71d27ec8ea3e538e7338297a60c3aef"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_group_user_list.html">IApiGroupUserList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#ad71d27ec8ea3e538e7338297a60c3aef">ListGroupUsersAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string groupId, int? state, int limit, string cursor, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
 <tr class="memdesc:ad71d27ec8ea3e538e7338297a60c3aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all users part of the group.   <a href="class_nakama_1_1_client.html#ad71d27ec8ea3e538e7338297a60c3aef">More...</a><br /></td></tr>
 <tr class="separator:ad71d27ec8ea3e538e7338297a60c3aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5edcf2a3e669b91500470ef9e08969f3"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_group_list.html">IApiGroupList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a5edcf2a3e669b91500470ef9e08969f3">ListGroupsAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string name=null, int limit=1, string cursor=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
-<tr class="memdesc:a5edcf2a3e669b91500470ef9e08969f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">List groups on the server.   <a href="class_nakama_1_1_client.html#a5edcf2a3e669b91500470ef9e08969f3">More...</a><br /></td></tr>
-<tr class="separator:a5edcf2a3e669b91500470ef9e08969f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae837d46fad83fb41757226069baef58c"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_group_list.html">IApiGroupList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#ae837d46fad83fb41757226069baef58c">ListGroupsAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string name=null, int limit=1, string cursor=null, string langTag=null, int? members=null, bool? open=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
+<tr class="memdesc:ae837d46fad83fb41757226069baef58c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List groups on the server.   <a href="class_nakama_1_1_client.html#ae837d46fad83fb41757226069baef58c">More...</a><br /></td></tr>
+<tr class="separator:ae837d46fad83fb41757226069baef58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9c5e7982803ed707024041462e8a37"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_leaderboard_record_list.html">IApiLeaderboardRecordList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#afd9c5e7982803ed707024041462e8a37">ListLeaderboardRecordsAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string leaderboardId, IEnumerable&lt; string &gt; ownerIds=null, long? expiry=null, int limit=1, string cursor=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
 <tr class="memdesc:afd9c5e7982803ed707024041462e8a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">List records from a leaderboard.   <a href="class_nakama_1_1_client.html#afd9c5e7982803ed707024041462e8a37">More...</a><br /></td></tr>
 <tr class="separator:afd9c5e7982803ed707024041462e8a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,15 +347,15 @@ Members who are already at the lowest rank will be skipped.  <a href="class_naka
 <tr class="memitem:a5dd46facc2a4fe1f64e8e3dd336b0d93"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_validate_purchase_response.html">IApiValidatePurchaseResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a5dd46facc2a4fe1f64e8e3dd336b0d93">ValidatePurchaseHuaweiAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string receipt, string signature, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
 <tr class="memdesc:a5dd46facc2a4fe1f64e8e3dd336b0d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate a purchase receipt against the Huawei AppGallery.   <a href="class_nakama_1_1_client.html#a5dd46facc2a4fe1f64e8e3dd336b0d93">More...</a><br /></td></tr>
 <tr class="separator:a5dd46facc2a4fe1f64e8e3dd336b0d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7047b935c91de22ac1df49c49b192f07"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_leaderboard_record.html">IApiLeaderboardRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a7047b935c91de22ac1df49c49b192f07">WriteLeaderboardRecordAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string leaderboardId, long score, long subScore=0, string metadata=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
-<tr class="memdesc:a7047b935c91de22ac1df49c49b192f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a record to a leaderboard.   <a href="class_nakama_1_1_client.html#a7047b935c91de22ac1df49c49b192f07">More...</a><br /></td></tr>
-<tr class="separator:a7047b935c91de22ac1df49c49b192f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace21b44474c3ac0ec53e5236259dd729"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_leaderboard_record.html">IApiLeaderboardRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#ace21b44474c3ac0ec53e5236259dd729">WriteLeaderboardRecordAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string leaderboardId, long score, long subScore=0, string metadata=null, <a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7">ApiOperator</a> apiOperator=<a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a9ed9fde06cff703c7420b059dd1bfca9">ApiOperator.NO_OVERRIDE</a>, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
+<tr class="memdesc:ace21b44474c3ac0ec53e5236259dd729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a record to a leaderboard.   <a href="class_nakama_1_1_client.html#ace21b44474c3ac0ec53e5236259dd729">More...</a><br /></td></tr>
+<tr class="separator:ace21b44474c3ac0ec53e5236259dd729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1928e95ebe9ffa4b53dff34d26a8b94d"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_storage_object_acks.html">IApiStorageObjectAcks</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a1928e95ebe9ffa4b53dff34d26a8b94d">WriteStorageObjectsAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, <a class="el" href="interface_nakama_1_1_i_api_write_storage_object.html">IApiWriteStorageObject</a>[] objects=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
 <tr class="memdesc:a1928e95ebe9ffa4b53dff34d26a8b94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write objects to the storage engine.   <a href="class_nakama_1_1_client.html#a1928e95ebe9ffa4b53dff34d26a8b94d">More...</a><br /></td></tr>
 <tr class="separator:a1928e95ebe9ffa4b53dff34d26a8b94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79057dc088d1efb03685ed71dae01327"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_leaderboard_record.html">IApiLeaderboardRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a79057dc088d1efb03685ed71dae01327">WriteTournamentRecordAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string tournamentId, long score, long subScore=0, string metadata=null, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
-<tr class="memdesc:a79057dc088d1efb03685ed71dae01327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a record to a tournament.   <a href="class_nakama_1_1_client.html#a79057dc088d1efb03685ed71dae01327">More...</a><br /></td></tr>
-<tr class="separator:a79057dc088d1efb03685ed71dae01327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd5582d9628dd16ff067d6d4ec72b63"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="interface_nakama_1_1_i_api_leaderboard_record.html">IApiLeaderboardRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nakama_1_1_client.html#a4cd5582d9628dd16ff067d6d4ec72b63">WriteTournamentRecordAsync</a> (<a class="el" href="interface_nakama_1_1_i_session.html">ISession</a> session, string tournamentId, long score, long subScore=0, string metadata=null, <a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7">ApiOperator</a> apiOperator=<a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a9ed9fde06cff703c7420b059dd1bfca9">ApiOperator.NO_OVERRIDE</a>, <a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a> retryConfiguration=null, CancellationTokenSource canceller=null)</td></tr>
+<tr class="memdesc:a4cd5582d9628dd16ff067d6d4ec72b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a record to a tournament.   <a href="class_nakama_1_1_client.html#a4cd5582d9628dd16ff067d6d4ec72b63">More...</a><br /></td></tr>
+<tr class="separator:a4cd5582d9628dd16ff067d6d4ec72b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -1268,8 +1268,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a143cf8eb589ce9116b3ba4953ec06633" name="a143cf8eb589ce9116b3ba4953ec06633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a143cf8eb589ce9116b3ba4953ec06633">&#9670;&nbsp;</a></span>BanGroupUsersAsync()</h2>
+<a id="a46fa73277247e7c0d29e50a8b33b9fd2" name="a46fa73277247e7c0d29e50a8b33b9fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fa73277247e7c0d29e50a8b33b9fd2">&#9670;&nbsp;</a></span>BanGroupUsersAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1293,7 +1293,7 @@ Properties</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
-          <td class="paramname"><em>usernames</em>, </td>
+          <td class="paramname"><em>ids</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1322,7 +1322,7 @@ Properties</h2></td></tr>
 
 <p>Ban a set of users from a group.  </p>
 
-<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#a8dae8de2510955e4d2c43dcd543c87ba">Nakama.IClient</a>.</p>
+<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#aa044112f299e845336e7512608b7940f">Nakama.IClient</a>.</p>
 
 </div>
 </div>
@@ -2957,8 +2957,8 @@ Members who are already at the lowest rank will be skipped. </p>
 
 </div>
 </div>
-<a id="a5edcf2a3e669b91500470ef9e08969f3" name="a5edcf2a3e669b91500470ef9e08969f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5edcf2a3e669b91500470ef9e08969f3">&#9670;&nbsp;</a></span>ListGroupsAsync()</h2>
+<a id="ae837d46fad83fb41757226069baef58c" name="ae837d46fad83fb41757226069baef58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae837d46fad83fb41757226069baef58c">&#9670;&nbsp;</a></span>ListGroupsAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2993,6 +2993,24 @@ Members who are already at the lowest rank will be skipped. </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>langTag</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int?&#160;</td>
+          <td class="paramname"><em>members</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>open</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a>&#160;</td>
           <td class="paramname"><em>retryConfiguration</em> = <code>null</code>, </td>
         </tr>
@@ -3017,7 +3035,7 @@ Members who are already at the lowest rank will be skipped. </p>
 
 <p>List groups on the server.  </p>
 
-<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#a50601c675840a46dab4a2b7d66aaf0f4">Nakama.IClient</a>.</p>
+<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#a9cd3213eb5f512a737cea5891ce658b8">Nakama.IClient</a>.</p>
 
 </div>
 </div>
@@ -5126,8 +5144,8 @@ Members who are already at the lowest rank will be skipped. </p>
 
 </div>
 </div>
-<a id="a7047b935c91de22ac1df49c49b192f07" name="a7047b935c91de22ac1df49c49b192f07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7047b935c91de22ac1df49c49b192f07">&#9670;&nbsp;</a></span>WriteLeaderboardRecordAsync()</h2>
+<a id="ace21b44474c3ac0ec53e5236259dd729" name="ace21b44474c3ac0ec53e5236259dd729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace21b44474c3ac0ec53e5236259dd729">&#9670;&nbsp;</a></span>WriteLeaderboardRecordAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5168,6 +5186,12 @@ Members who are already at the lowest rank will be skipped. </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7">ApiOperator</a>&#160;</td>
+          <td class="paramname"><em>apiOperator</em> = <code><a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a9ed9fde06cff703c7420b059dd1bfca9">ApiOperator.NO_OVERRIDE</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a>&#160;</td>
           <td class="paramname"><em>retryConfiguration</em> = <code>null</code>, </td>
         </tr>
@@ -5192,7 +5216,7 @@ Members who are already at the lowest rank will be skipped. </p>
 
 <p>Write a record to a leaderboard.  </p>
 
-<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#a4b18f4368af39580c9594d98de5fb5c7">Nakama.IClient</a>.</p>
+<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#aace0971bd71b2cacab99e4a71641a687">Nakama.IClient</a>.</p>
 
 </div>
 </div>
@@ -5248,8 +5272,8 @@ Members who are already at the lowest rank will be skipped. </p>
 
 </div>
 </div>
-<a id="a79057dc088d1efb03685ed71dae01327" name="a79057dc088d1efb03685ed71dae01327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79057dc088d1efb03685ed71dae01327">&#9670;&nbsp;</a></span>WriteTournamentRecordAsync()</h2>
+<a id="a4cd5582d9628dd16ff067d6d4ec72b63" name="a4cd5582d9628dd16ff067d6d4ec72b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd5582d9628dd16ff067d6d4ec72b63">&#9670;&nbsp;</a></span>WriteTournamentRecordAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5290,6 +5314,12 @@ Members who are already at the lowest rank will be skipped. </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7">ApiOperator</a>&#160;</td>
+          <td class="paramname"><em>apiOperator</em> = <code><a class="el" href="namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a9ed9fde06cff703c7420b059dd1bfca9">ApiOperator.NO_OVERRIDE</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="class_nakama_1_1_retry_configuration.html">RetryConfiguration</a>&#160;</td>
           <td class="paramname"><em>retryConfiguration</em> = <code>null</code>, </td>
         </tr>
@@ -5314,7 +5344,7 @@ Members who are already at the lowest rank will be skipped. </p>
 
 <p>Write a record to a tournament.  </p>
 
-<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#af4bfd829554ae4caa72859070f73ef3f">Nakama.IClient</a>.</p>
+<p>Implements <a class="el" href="interface_nakama_1_1_i_client.html#a399f9e85002780278d4b41d61ec6ba37">Nakama.IClient</a>.</p>
 
 </div>
 </div>

@@ -101,6 +101,13 @@ var namespace_nakama =
     [ "StorageObjectId", "class_nakama_1_1_storage_object_id.html", "class_nakama_1_1_storage_object_id" ],
     [ "WebSocketAdapter", "class_nakama_1_1_web_socket_adapter.html", "class_nakama_1_1_web_socket_adapter" ],
     [ "WriteStorageObject", "class_nakama_1_1_write_storage_object.html", "class_nakama_1_1_write_storage_object" ],
+    [ "ApiOperator", "namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7", [
+      [ "NO_OVERRIDE", "namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a9ed9fde06cff703c7420b059dd1bfca9", null ],
+      [ "BEST", "namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7ada034de38c791a4e574a513e7b97bec6", null ],
+      [ "SET", "namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a8c52684db8f49511e9b44471716bf164", null ],
+      [ "INCREMENT", "namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a90cf1f5206b348a822cc1a453a587534", null ],
+      [ "DECREMENT", "namespace_nakama.html#a8e9c42a36e780e31a03f2ba94a3bb6e7ac0ffa6e46086551bc5113d1238faf106", null ]
+    ] ],
     [ "ChannelType", "namespace_nakama.html#addd7f097ac4c449d75e44da62657f307", [
       [ "Room", "namespace_nakama.html#addd7f097ac4c449d75e44da62657f307acc3abcf4426bff80257d22999d0eda8f", null ],
       [ "DirectMessage", "namespace_nakama.html#addd7f097ac4c449d75e44da62657f307a1189cba3ed448908f0ab3b5af22dbffa", null ],

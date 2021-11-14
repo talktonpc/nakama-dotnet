@@ -61,6 +61,13 @@ var _api_client_8gen_8cs =
     [ "Nakama.IApiWriteStorageObjectsRequest", "interface_nakama_1_1_i_api_write_storage_objects_request.html", "interface_nakama_1_1_i_api_write_storage_objects_request" ],
     [ "Nakama.IProtobufAny", "interface_nakama_1_1_i_protobuf_any.html", "interface_nakama_1_1_i_protobuf_any" ],
     [ "Nakama.IRpcStatus", "interface_nakama_1_1_i_rpc_status.html", "interface_nakama_1_1_i_rpc_status" ],
+    [ "ApiOperator", "_api_client_8gen_8cs.html#a8e9c42a36e780e31a03f2ba94a3bb6e7", [
+      [ "NO_OVERRIDE", "_api_client_8gen_8cs.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a9ed9fde06cff703c7420b059dd1bfca9", null ],
+      [ "BEST", "_api_client_8gen_8cs.html#a8e9c42a36e780e31a03f2ba94a3bb6e7ada034de38c791a4e574a513e7b97bec6", null ],
+      [ "SET", "_api_client_8gen_8cs.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a8c52684db8f49511e9b44471716bf164", null ],
+      [ "INCREMENT", "_api_client_8gen_8cs.html#a8e9c42a36e780e31a03f2ba94a3bb6e7a90cf1f5206b348a822cc1a453a587534", null ],
+      [ "DECREMENT", "_api_client_8gen_8cs.html#a8e9c42a36e780e31a03f2ba94a3bb6e7ac0ffa6e46086551bc5113d1238faf106", null ]
+    ] ],
     [ "ValidatedPurchaseEnvironment", "_api_client_8gen_8cs.html#ac6bc0f689ba2cf1af997a138312f948c", [
       [ "UNKNOWN", "_api_client_8gen_8cs.html#ac6bc0f689ba2cf1af997a138312f948ca696b031073e74bf2cb98e5ef201d4aa3", null ],
       [ "SANDBOX", "_api_client_8gen_8cs.html#ac6bc0f689ba2cf1af997a138312f948ca439d8eeff1670efd5d1eb2a4232254e8", null ],

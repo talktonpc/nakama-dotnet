@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nakama .NET: Nakama .NET</title>
+<title>Nakama .NET Client SDK for MetaTop: Nakama .NET</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="nakama_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Nakama .NET<span id="projectnumber">&#160;3.1.1</span>
+   <div id="projectname">Nakama .NET Client SDK for MetaTop<span id="projectnumber">&#160;3.1.1</span>
    </div>
-   <div id="projectbrief">Nakama .NET Client SDK</div>
+   <div id="projectbrief">Nakama .NET Client SDK for MetaTop</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,7 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;"
+  <div id="splitbar" style="-moz-user-select:none;" 
        class="ui-resizable-handle">
   </div>
 </div>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0"
+<iframe src="javascript:void(0)" frameborder="0" 
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -87,9 +87,9 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title"><a class="el" href="namespace_nakama.html">Nakama</a> .NET </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md__Users_sean_Documents_GitHub_nakama_dotnet_README"></a></p>
+<div class="textblock"><p ><a class="anchor" id="md__Users_lonycell_works_game_server_nakama_dotnet_README"></a></p>
 <blockquote class="doxtable">
-<p >.NET client for <a class="el" href="namespace_nakama.html">Nakama</a> .NET Client SDK</p>
+<p >.NET client for <a class="el" href="namespace_nakama.html">Nakama</a> server written in C#. </p>
 </blockquote>
 <p><a href="https://github.com/heroiclabs/nakama">Nakama</a> is an open-source server designed to power modern games and apps. Features include user accounts, chat, social, matchmaker, realtime multiplayer, and much <a href="https://heroiclabs.com">more</a>.</p>
 <p >This client implements the full API and socket options with the server. It's written in C# with minimal dependencies to support Unity, Xamarin, Godot, XNA, and other engines and frameworks.</p>
@@ -196,7 +196,14 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!-- fragment --><p >To run a specific test, pass the fully qualified name of the method to <code>dotnet test --filter</code>:</p>
 <div class="fragment"><div class="line">dotnet test --filter &quot;Nakama.Tests.Api.GroupTest.ShouldPromoteAndDemoteUsers&quot;</div>
 </div><!-- fragment --><p >If you'd like to attach a Visual Studio debugger to a test, set <code>VSTEST_HOST_DEBUG</code> to <code>true</code> in your shell environment and run <code>dotnet test</code>. Attach the debugger to the process identified by the console.</p>
-<h2>Licenses</h2>
+<h2>Generate Docs</h2>
+<p >nakama-dotnet API docs are generated with Doxygen and deployed to GitHub pages.</p>
+<p >When changing the API comments, rerun Doxygen and commit the changes in <code>docs/*</code>.</p>
+<p >To run Doxygen:</p>
+<div class="fragment"><div class="line">brew install doxygen</div>
+<div class="line">cd docs/</div>
+<div class="line">doxygen</div>
+</div><!-- fragment --><h2>Licenses</h2>
 <p >This project is licensed under the <a href="https://github.com/heroiclabs/nakama-dotnet/blob/master/LICENSE">Apache-2 License</a>.</p>
 <h2>Special Thanks</h2>
 <p >Thanks to Alex Parker (@zanders3) for the excellent <a href="https://github.com/zanders3/json">json</a> library and David Haig (@ninjasource) for <a href="https://github.com/ninjasource/Ninja.WebSockets">Ninja.WebSockets</a>. </p>
