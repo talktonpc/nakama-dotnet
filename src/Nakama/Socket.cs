@@ -276,12 +276,12 @@ namespace Nakama
         }
 
         /// <inheritdoc cref="CreateMatchAsync"/>
-        public async Task<IMatch> CreateMatchAsync()
+        public async Task<IMatch> CreateMatchAsync(string name = null)
         {
             var envelope = new WebSocketMessageEnvelope
             {
                 Cid = $"{_cid++}",
-                MatchCreate = new MatchCreateMessage()
+                MatchCreate = new MatchCreateMessage { Name = name }
             };
             var response = await SendAsync(envelope);
             return response.Match;
@@ -896,6 +896,7 @@ namespace Nakama
                 _adapter.Send(new ArraySegment<byte>(buffer), CancellationToken.None);
                 return null; // No response required.
             }
+
             var completer = new TaskCompletionSource<WebSocketMessageEnvelope>();
 
             lock (_lockObj)

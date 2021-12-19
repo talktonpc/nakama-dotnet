@@ -1,5 +1,5 @@
 /**
- * Copyright 2018 The Nakama Authors
+ * Copyright 2021 The Nakama Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,16 @@
  * limitations under the License.
  */
 
+using System;
 using System.Runtime.Serialization;
 
-namespace Nakama
+namespace Nakama.Tests.Sync
 {
-    /// <summary>
-    /// A create message for a match on the server.
-    /// </summary>
-    internal class MatchCreateMessage
+    [Serializable]
+    public class SyncTestObject
     {
-        [DataMember(Name = "name"), Preserve]
-        public string Name { get; set; }
-        
-        public override string ToString() => $"MatchCreateMessage(name='{Name}')";
+        [DataMember(Name = "test_value")]
+        public string TestValue { get; set; }
+
     }
 }
